@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* Menu Navigation Style & Animasaun */
+.menu {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #6b11ff, #00d4ff);
+    list-style: none;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    color: #ffeb3b;
+    transform: translateY(-2px);
+}
+
+/* Container Flexbox Style */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    min-height: 150px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    margin: 30px auto;
+    width: 90%;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.3);
+}
+
+/* Box Style & Animasaun Hover */
+.box {
+    background: white;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.box p {
+    font-weight: 600;
+    color: #0072ff;
+}
+
+.box:hover {
+    transform: translateY(-8px) scale(1.05);
+    background-color: #ffeb3b;
+    border-color: #fbc02d;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover p {
+    color: #333;
+}
+
+/* Heading Style */
+h2 {
+    text-align: center;
+    color: #333;
+    margin: 40px 0 20px 0;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Content Paragraph & Image Style */
+.content-section {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.content-section img {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.content-section img:hover {
+    transform: scale(1.02);
+}
+
+.content-section p {
+    text-align: justify;
+    color: #555;
+    font-size: 15px;
+}
+
+/* Clearfix para img float bele funsionatu di'ak */
+.content-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
